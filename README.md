@@ -69,7 +69,7 @@ The project makes use of **Spring Boot**, **Docker**, **Eureka**, and an **API G
 3. **Itinerary Management**  
    - Users can view, modify, and delete itineraries.  
    - These actions involve coordination between the **Itinerary Prosumer** and the **Transportation Prosumer**.
-<img src="diagrams/use-case/use-case.png" alt="Diagram" height="200" />
+<img src="diagrams/use-case/use-case.png" alt="Diagram" height="300" />
 ---
 
 ## Asynchronous Processing
