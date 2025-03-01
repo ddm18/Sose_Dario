@@ -100,7 +100,6 @@ The project makes use of **Spring Boot**, **Docker**, **Eureka**, and an **API G
 3. **Manage Itinerary**  
    - Users can view, modify, or delete itineraries via the **Itinerary Prosumer**.  
    - These actions involve CRUD operations on the Itinerary and Transportation databases.
-# Diagrams
 
 Below are collapsible sections for each sequence diagram. Click on a section to expand and view its contents.
 
