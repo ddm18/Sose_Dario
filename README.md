@@ -172,6 +172,20 @@ Below are collapsible sections for each sequence diagram. Click on a section to 
 - Demonstration of **asynchronous service coordination** and **load-balanced microservices**.  
 - Clear **sequence diagrams**, **architectural diagrams**, and comprehensive project documentation.
 
+<details>
+<summary><strong>Main Page Picture</strong></summary>
+
+![Main Page Picture](pictures/main_page.png)
+
+</details>
+
+<details>
+<summary><strong>Choose Transportation Page</strong></summary>
+
+![Choose Transportation Page](pictures/transportation_page.png)
+
+</details>
+
 ---
 
 ## Project Setup Instructions
