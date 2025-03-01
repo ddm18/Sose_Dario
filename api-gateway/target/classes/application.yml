@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: api-gateway
+
+  profiles:
+    active: dev
+
+
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':  # Apply to all routes
+            allowedOrigins: 
+              - "http://localhost:3000"  # Frontend origin
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders: "*"
+      discovery:
+        locator:
+          enabled: true  # Enables dynamic routing based on Eureka
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+
+
+management:
+  endpoint:
+    gateway:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+
+
+
+

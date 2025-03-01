@@ -1,0 +1,38 @@
+springdoc:
+  version: 2.1.0
+
+spring:
+  application:
+    name: boat-rest-service # Unique name for this service
+  profiles:
+    active: dev
+
+
+  datasource:
+    url: 
+    username:
+    password:
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # Automatically creates/updates tables (use `none` for production)
+    properties:
+      hibernate.default_schema: boat_service_schema
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true # Enables SQL query logging
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka/
+    register-with-eureka: true  # Enables Eureka registration
+    fetch-registry: false        # Hotel doesn't need to communicate with other services
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

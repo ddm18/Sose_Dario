@@ -1,0 +1,14 @@
+it/univaq/dandd/model/ItineraryInfo.class
+it/univaq/dandd/service/ItineraryServiceImpl.class
+it/univaq/dandd/RESTServiceItinerary.class
+it/univaq/dandd/service/ItineraryService.class
+it/univaq/dandd/client/TransportationClient.class
+it/univaq/dandd/dao/ItineraryRepository.class
+it/univaq/dandd/exception/ParsingException.class
+it/univaq/dandd/client/HotelClient.class
+it/univaq/dandd/exception/ExceptionData.class
+it/univaq/dandd/exception/ControllerExceptionHandler.class
+it/univaq/dandd/controller/ItineraryController.class
+it/univaq/dandd/exception/TemplateNotFoundException.class
+it/univaq/dandd/client/TransportationComm.class
+it/univaq/dandd/ItineraryDeletionBean.class

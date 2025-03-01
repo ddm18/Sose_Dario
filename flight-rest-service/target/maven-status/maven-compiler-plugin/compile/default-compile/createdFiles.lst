@@ -1,0 +1,10 @@
+it/univaq/dandd/flight_rest_service/model/FlightRoute.class
+it/univaq/dandd/flight_rest_service/RESTServiceFlights.class
+it/univaq/dandd/flight_rest_service/service/FlightRouteServiceImpl.class
+it/univaq/dandd/flight_rest_service/dao/FlightRouteRepository.class
+it/univaq/dandd/flight_rest_service/exception/RouteNotFoundException.class
+it/univaq/dandd/flight_rest_service/exception/IdParsingException.class
+it/univaq/dandd/flight_rest_service/exception/ExceptionData.class
+it/univaq/dandd/flight_rest_service/controller/FlightController.class
+it/univaq/dandd/flight_rest_service/exception/ControllerExceptionHandler.class
+it/univaq/dandd/flight_rest_service/service/FlightRouteService.class

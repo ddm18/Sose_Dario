@@ -1,0 +1,10 @@
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/hotel-rest-service/src/main/java/it/univaq/dandd/hotel_rest_service/service/HotelServiceImpl.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/hotel-rest-service/src/main/java/it/univaq/dandd/hotel_rest_service/exception/ExceptionData.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/hotel-rest-service/src/main/java/it/univaq/dandd/hotel_rest_service/exception/ControllerExceptionHandler.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/hotel-rest-service/src/main/java/it/univaq/dandd/hotel_rest_service/exception/IdParsingException.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/hotel-rest-service/src/main/java/it/univaq/dandd/hotel_rest_service/dao/HotelRepository.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/hotel-rest-service/src/main/java/it/univaq/dandd/hotel_rest_service/service/HotelService.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/hotel-rest-service/src/main/java/it/univaq/dandd/hotel_rest_service/exception/HotelNotFoundException.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/hotel-rest-service/src/main/java/it/univaq/dandd/hotel_rest_service/controller/HotelController.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/hotel-rest-service/src/main/java/it/univaq/dandd/hotel_rest_service/model/HotelInfo.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/hotel-rest-service/src/main/java/it/univaq/dandd/hotel_rest_service/RESTServiceHotel.java

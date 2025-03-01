@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: car-soap-service # Unique name for this SOAP service
+  profiles:
+    active: dev
+
+
+  datasource:
+    url: 
+    username: 
+    password: 
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # Automatically creates/updates tables (use `none` for production)
+    properties:
+      hibernate.default_schema: car_service_schema
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true # Enables SQL query logging
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka/ # Eureka server URL
+    register-with-eureka: true # Enables Eureka registration
+    fetch-registry: false      # The service doesn't need to communicate with others directly
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # Exposes all actuator endpoints

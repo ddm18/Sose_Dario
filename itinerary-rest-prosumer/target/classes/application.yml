@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: itinerary-rest-service # Unique name for this service
+  profiles:
+    active: dev
+  config:
+    import: optional:configserver:discovery://config-server # Use Eureka for Config Server
+
+  datasource:
+    url: 
+    username: 
+    password: 
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # Automatically creates/updates tables (use `none` for production)
+    properties:
+      hibernate.default_schema: itinerary_prosumer_schema
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true # Enables SQL query logging
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka # Eureka server URL
+    register-with-eureka: true  # Enables Eureka registration
+    fetch-registry: true 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

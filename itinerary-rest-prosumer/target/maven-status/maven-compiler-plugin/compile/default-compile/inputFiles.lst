@@ -1,0 +1,14 @@
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/controller/ItineraryController.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/client/TransportationClient.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/RESTServiceItinerary.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/exception/ParsingException.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/service/ItineraryServiceImpl.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/service/ItineraryService.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/exception/TemplateNotFoundException.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/exception/ExceptionData.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/ItineraryDeletionBean.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/exception/ControllerExceptionHandler.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/client/HotelClient.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/dao/ItineraryRepository.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/model/ItineraryInfo.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/itinerary-rest-prosumer/src/main/java/it/univaq/dandd/client/TransportationComm.java

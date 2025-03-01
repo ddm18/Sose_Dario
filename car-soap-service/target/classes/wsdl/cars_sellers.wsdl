@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:tns="http://univaq.it/dandd/wsdltypes"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    name="CarSellerService"
+    targetNamespace="http://univaq.it/dandd/wsdltypes">
+
+    <!-- Types Section -->
+    <wsdl:types>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                    targetNamespace="http://univaq.it/dandd/wsdltypes">
+
+            <!-- Complex Type for CarSeller -->
+            <xsd:complexType name="CarSeller">
+                <xsd:sequence>
+                    <xsd:element name="id" type="xsd:long" />
+                    <xsd:element name="carSeller" type="xsd:string" />
+                    <xsd:element name="location" type="xsd:string" />
+                    <xsd:element name="latitude" type="xsd:float" />
+                    <xsd:element name="longitude" type="xsd:float" />
+                </xsd:sequence>
+            </xsd:complexType>
+
+            <!-- Complex Type for CarSellerTransportDTO -->
+			<xsd:complexType name="CarSellerTransportWsDTO">
+			    <xsd:sequence>
+			        <xsd:element name="departureId" type="xsd:long" />
+			        <xsd:element name="arrivalId" type="xsd:long" />
+			        <xsd:element name="departureName" type="xsd:string" />
+			        <xsd:element name="departureLatitude" type="xsd:float" />
+			        <xsd:element name="departureLongitude" type="xsd:float" />
+			        <xsd:element name="arrivalName" type="xsd:string" />
+			        <xsd:element name="arrivalLatitude" type="xsd:float" />
+			        <xsd:element name="arrivalLongitude" type="xsd:float" />
+			        <xsd:element name="carSeller" type="xsd:string" />
+			    </xsd:sequence>
+			</xsd:complexType>
+
+            <!-- Request and Response Types -->
+            <xsd:element name="getAllCarSellersRequest">
+                <xsd:complexType>
+                    <xsd:sequence />
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getAllCarSellersResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="carSellers" type="tns:CarSeller" maxOccurs="unbounded" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element name="getCarSellerByIdsRequest">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="departureId" type="xsd:long" />
+                        <xsd:element name="arrivalId" type="xsd:long" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="getCarSellerByIdsResponse">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="carSellerTransportWsDTO" type="tns:CarSellerTransportWsDTO" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <!-- Add GetCommonCarSellersWithDetails Request and Response -->
+            <xsd:element name="getCommonCarSellersWithDetailsRequest">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="departure" type="xsd:string" />
+                        <xsd:element name="arrival" type="xsd:string" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+			<xsd:element name="getCommonCarSellersWithDetailsResponse">
+			    <xsd:complexType>
+			        <xsd:sequence>
+			            <xsd:element name="carSellerTransportWsDTOs" type="tns:CarSellerTransportWsDTO" maxOccurs="unbounded" />
+			        </xsd:sequence>
+			    </xsd:complexType>
+			</xsd:element>
+        </xsd:schema>
+    </wsdl:types>
+
+    <!-- Messages Section -->
+    <wsdl:message name="getAllCarSellersRequest">
+        <wsdl:part element="tns:getAllCarSellersRequest" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="getAllCarSellersResponse">
+        <wsdl:part element="tns:getAllCarSellersResponse" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="getCarSellerByIdsRequest">
+        <wsdl:part element="tns:getCarSellerByIdsRequest" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="getCarSellerByIdsResponse">
+        <wsdl:part element="tns:getCarSellerByIdsResponse" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="getCommonCarSellersWithDetailsRequest">
+        <wsdl:part element="tns:getCommonCarSellersWithDetailsRequest" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="getCommonCarSellersWithDetailsResponse">
+        <wsdl:part element="tns:getCommonCarSellersWithDetailsResponse" name="parameters" />
+    </wsdl:message>
+
+    <!-- Port Type Section -->
+    <wsdl:portType name="CarSellerPortType">
+        <wsdl:operation name="getAllCarSellers">
+            <wsdl:input message="tns:getAllCarSellersRequest" />
+            <wsdl:output message="tns:getAllCarSellersResponse" />
+        </wsdl:operation>
+        <wsdl:operation name="getCarSellerByIds">
+            <wsdl:input message="tns:getCarSellerByIdsRequest" />
+            <wsdl:output message="tns:getCarSellerByIdsResponse" />
+        </wsdl:operation>
+        <wsdl:operation name="getCommonCarSellersWithDetails">
+            <wsdl:input message="tns:getCommonCarSellersWithDetailsRequest" />
+            <wsdl:output message="tns:getCommonCarSellersWithDetailsResponse" />
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <!-- Binding Section -->
+    <wsdl:binding name="CarSellerBinding" type="tns:CarSellerPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+        <wsdl:operation name="getAllCarSellers">
+            <soap:operation soapAction="http://univaq.it/dandd/wsdltypes/getAllCarSellers" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCarSellerByIds">
+            <soap:operation soapAction="http://univaq.it/dandd/wsdltypes/getCarSellerByIds" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCommonCarSellersWithDetails">
+            <soap:operation soapAction="http://univaq.it/dandd/wsdltypes/getCommonCarSellersWithDetails" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <!-- Service Section -->
+    <wsdl:service name="CarSellerService">
+        <wsdl:port name="CarSellerPort" binding="tns:CarSellerBinding">
+            <soap:address location="http://car-soap-service:9021/ws/CarSellerService" />
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>

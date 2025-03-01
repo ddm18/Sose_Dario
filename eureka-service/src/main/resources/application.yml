@@ -1,0 +1,22 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false # The Eureka server should not register itself
+    fetch-registry: false       # The Eureka server does not fetch other registries
+  instance:
+    hostname: eureka-service         # Replace 'localhost' with the server's hostname or IP if needed
+
+spring:
+  application:
+    name: eureka-service # The name of the Eureka Server application
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # Allows access to all management endpoints
+  endpoint:
+    health:
+      show-details: always # Show detailed health information

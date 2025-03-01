@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>android-player-root</name>
+	<comment></comment>
+	<projects>
+		<project>api-gateway</project>
+		<project>boat-rest-service</project>
+		<project>car-soap-service</project>
+		<project>eureka-service</project>
+		<project>flight-rest-service</project>
+		<project>front-End-Interface</project>
+		<project>hotel-rest-service</project>
+		<project>itinerary-rest-prosumer</project>
+		<project>transportation-rest-prosumer</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

@@ -1,0 +1,10 @@
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/boat-rest-service/src/main/java/it/univaq/dandd/boat_rest_service/dao/NauticalRouteRepository.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/boat-rest-service/src/main/java/it/univaq/dandd/boat_rest_service/model/NauticalRoute.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/boat-rest-service/src/main/java/it/univaq/dandd/boat_rest_service/service/NauticalRouteService.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/boat-rest-service/src/main/java/it/univaq/dandd/boat_rest_service/exception/ControllerExceptionHandler.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/boat-rest-service/src/main/java/it/univaq/dandd/boat_rest_service/controller/BoatController.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/boat-rest-service/src/main/java/it/univaq/dandd/boat_rest_service/exception/RouteNotFoundException.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/boat-rest-service/src/main/java/it/univaq/dandd/boat_rest_service/service/NauticalRouteServiceImpl.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/boat-rest-service/src/main/java/it/univaq/dandd/boat_rest_service/RESTServiceBoats.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/boat-rest-service/src/main/java/it/univaq/dandd/boat_rest_service/exception/IdParsingException.java
+/Users/dariodm/Documents/workspace-spring-tool-suite-4-4.27.0.RELEASE/parent/boat-rest-service/src/main/java/it/univaq/dandd/boat_rest_service/exception/ExceptionData.java

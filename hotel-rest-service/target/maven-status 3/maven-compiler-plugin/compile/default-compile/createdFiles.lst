@@ -1,0 +1,10 @@
+it/univaq/dandd/hotel_rest_service/controller/HotelController.class
+it/univaq/dandd/hotel_rest_service/exception/HotelNotFoundException.class
+it/univaq/dandd/hotel_rest_service/exception/ControllerExceptionHandler.class
+it/univaq/dandd/hotel_rest_service/service/HotelService.class
+it/univaq/dandd/hotel_rest_service/model/HotelInfo.class
+it/univaq/dandd/hotel_rest_service/dao/HotelRepository.class
+it/univaq/dandd/hotel_rest_service/exception/IdParsingException.class
+it/univaq/dandd/hotel_rest_service/service/HotelServiceImpl.class
+it/univaq/dandd/hotel_rest_service/exception/ExceptionData.class
+it/univaq/dandd/hotel_rest_service/RESTServiceHotel.class

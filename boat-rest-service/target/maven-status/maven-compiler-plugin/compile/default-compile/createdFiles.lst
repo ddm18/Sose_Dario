@@ -1,0 +1,10 @@
+it/univaq/dandd/boat_rest_service/exception/IdParsingException.class
+it/univaq/dandd/boat_rest_service/dao/NauticalRouteRepository.class
+it/univaq/dandd/boat_rest_service/controller/BoatController.class
+it/univaq/dandd/boat_rest_service/exception/ControllerExceptionHandler.class
+it/univaq/dandd/boat_rest_service/model/NauticalRoute.class
+it/univaq/dandd/boat_rest_service/exception/RouteNotFoundException.class
+it/univaq/dandd/boat_rest_service/service/NauticalRouteServiceImpl.class
+it/univaq/dandd/boat_rest_service/RESTServiceBoats.class
+it/univaq/dandd/boat_rest_service/service/NauticalRouteService.class
+it/univaq/dandd/boat_rest_service/exception/ExceptionData.class

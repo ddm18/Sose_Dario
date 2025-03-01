@@ -1,0 +1,120 @@
+version: "3.8"
+
+services:
+  eureka-service:
+    build:
+      context: ./eureka-service
+    container_name: eureka-service
+    ports:
+      - "8761:8761"  # Expose Eureka's port to your host machine at 8761
+    networks:
+      - app-network
+    # No environment variables needed if you've configured eureka's application.yml to run on port 8761
+    # with eureka.client.register-with-eureka=false, etc.
+
+  api-gateway:
+    build:
+      context: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka-service
+    networks:
+      - app-network
+    # Again, no environment variables. Make sure your application.yml 
+    # has eureka.client.service-url.defaultZone=http://eureka-service:8761/eureka/
+
+  boat-rest-service:
+    build:
+      context: ./boat-rest-service
+    container_name: boat-rest-service
+    ports:
+      - "8081:8080"
+    depends_on:
+      - eureka-service
+      - api-gateway
+    networks:
+      - app-network
+    # application.yml should point to http://eureka-service:8761/eureka/
+
+  car-soap-service:
+    build:
+      context: ./car-soap-service
+    container_name: car-soap-service
+    ports:
+      - "9021:9021"
+    depends_on:
+      - eureka-service
+      - api-gateway
+    networks:
+      - app-network
+
+  flight-rest-service:
+    build:
+      context: ./flight-rest-service
+    container_name: flight-rest-service
+    ports:
+      - "8082:8080"
+    depends_on:
+      - eureka-service
+      - api-gateway
+    networks:
+      - app-network
+
+  front-end-interface:
+    build:
+      context: ./front-End-Interface
+    container_name: front-end-interface
+    ports:
+      - "8083:8080"
+    depends_on:
+      - itinerary-rest-prosumer
+    networks:
+      - app-network
+
+  hotel-rest-service:
+    build:
+      context: ./hotel-rest-service
+    container_name: hotel-rest-service
+    ports:
+      - "8084:8080"
+    depends_on:
+      - eureka-service
+      - api-gateway
+    networks:
+      - app-network
+
+  itinerary-rest-prosumer:
+    build:
+      context: ./itinerary-rest-prosumer
+    container_name: itinerary-rest-prosumer
+    ports:
+      - "8085:8080"
+    depends_on:
+      - eureka-service
+      - api-gateway
+      - hotel-rest-service
+      - transportation-rest-prosumer
+    networks:
+      - app-network
+
+  transportation-rest-prosumer:
+    build:
+      context: ./transportation-rest-prosumer
+    container_name: transportation-rest-prosumer
+    ports:
+      - "8086:8080"
+    depends_on:
+      - eureka-service
+      - api-gateway
+      - car-soap-service
+      - flight-rest-service
+      - boat-rest-service
+    networks:
+      - app-network
+    
+
+networks:
+  app-network:
+    driver: bridge
