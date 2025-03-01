@@ -69,7 +69,7 @@ The project makes use of **Spring Boot**, **Docker**, **Eureka**, and an **API G
 3. **Itinerary Management**  
    - Users can view, modify, and delete itineraries.  
    - These actions involve coordination between the **Itinerary Prosumer** and the **Transportation Prosumer**.
-![use-case Diagram](diagrams/use-case/use-case)
+![use-case Diagram](diagrams/use-case/use-case.png)
 ---
 
 ## Asynchronous Processing
@@ -121,7 +121,7 @@ Below are collapsible sections for each sequence diagram. Click on a section to 
 <details>
 <summary><strong>Check Itinerary Sequence</strong></summary>
 
-![Check Itinerary Sequence](diagrams/check_itinerary_seq/check_itinerary_seq.png)
+![Check Itinerary Sequence](diagrams/check_itinerary_seq/check_itinerary.png)
 
 </details>
 
@@ -135,14 +135,14 @@ Below are collapsible sections for each sequence diagram. Click on a section to 
 <details>
 <summary><strong>Choose Transportation Sequence</strong></summary>
 
-![Choose Transportation Sequence](diagrams/choose_transportation_seq/choose_transportation_seq.png)
+![Choose Transportation Sequence](diagrams/choose_transportation_seq/choose_transportation.png)
 
 </details>
 
 <details>
 <summary><strong>Delete All Itinerary Sequence</strong></summary>
 
-![Delete All Itinerary Sequence](diagrams/delete_all_itinerary_seq/delete_all_itinerary_seq.png)
+![Delete All Itinerary Sequence](diagrams/delete_all_itinerary_seq/delete_all_itinerary.png)
 
 </details>
 
