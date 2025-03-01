@@ -52,7 +52,7 @@ The project makes use of **Spring Boot**, **Docker**, **Eureka**, and an **API G
    - **API Gateway**: Routes and balances requests between clients and microservices.  
    - **Discovery Service (Eureka)**: Ensures dynamic discovery of microservices.
 
-![Alt text](diagrams/component_diagram/component_diagram.png)
+![Component Diagram](diagrams/component_diagram/component_diagram.png)
 
 
 ---
@@ -69,7 +69,7 @@ The project makes use of **Spring Boot**, **Docker**, **Eureka**, and an **API G
 3. **Itinerary Management**  
    - Users can view, modify, and delete itineraries.  
    - These actions involve coordination between the **Itinerary Prosumer** and the **Transportation Prosumer**.
-
+![use-case Diagram](diagrams/use-case/use-case)
 ---
 
 ## Asynchronous Processing
@@ -100,6 +100,59 @@ The project makes use of **Spring Boot**, **Docker**, **Eureka**, and an **API G
 3. **Manage Itinerary**  
    - Users can view, modify, or delete itineraries via the **Itinerary Prosumer**.  
    - These actions involve CRUD operations on the Itinerary and Transportation databases.
+# Diagrams
+
+Below are collapsible sections for each sequence diagram. Click on a section to expand and view its contents.
+
+<details>
+<summary><strong>Check Available Hotels Sequence</strong></summary>
+
+![Check Available Hotels Sequence](diagrams/check_available_hotels_seq/check_available_hotels_seq.png)
+
+</details>
+
+<details>
+<summary><strong>Check Available Transportations Sequence</strong></summary>
+
+![Check Available Transportations Sequence](diagrams/check_available_transportations_seq/check_available_transportations_seq.png)
+
+</details>
+
+<details>
+<summary><strong>Check Itinerary Sequence</strong></summary>
+
+![Check Itinerary Sequence](diagrams/check_itinerary_seq/check_itinerary_seq.png)
+
+</details>
+
+<details>
+<summary><strong>Choose Hotels Sequence</strong></summary>
+
+![Choose Hotels Sequence](diagrams/choose_hotels_seq/choose_hotels_seq.png)
+
+</details>
+
+<details>
+<summary><strong>Choose Transportation Sequence</strong></summary>
+
+![Choose Transportation Sequence](diagrams/choose_transportation_seq/choose_transportation_seq.png)
+
+</details>
+
+<details>
+<summary><strong>Delete All Itinerary Sequence</strong></summary>
+
+![Delete All Itinerary Sequence](diagrams/delete_all_itinerary_seq/delete_all_itinerary_seq.png)
+
+</details>
+
+<details>
+<summary><strong>Delete Specific Hotel Itinerary</strong></summary>
+
+![Delete Specific Hotel Itinerary](diagrams/delete_specific_hotel_itinerary/delete_specific_hotel_itinerary.png)
+
+</details>
+
 
 ---
 
