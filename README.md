@@ -180,7 +180,7 @@ Below are collapsible sections for each sequence diagram. Click on a section to 
 </details>
 
 <details>
-<summary><strong>Choose Transportation Page</strong></summary>
+<summary><strong>Choose Transportation Page Picture</strong></summary>
 
 ![Choose Transportation Page](pictures/transportation_page.png)
 
