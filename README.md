@@ -52,6 +52,9 @@ The project makes use of **Spring Boot**, **Docker**, **Eureka**, and an **API G
    - **API Gateway**: Routes and balances requests between clients and microservices.  
    - **Discovery Service (Eureka)**: Ensures dynamic discovery of microservices.
 
+![Alt text](diagrams/component_diagram/component_diagram.png)
+
+
 ---
 
 ## How It Works
